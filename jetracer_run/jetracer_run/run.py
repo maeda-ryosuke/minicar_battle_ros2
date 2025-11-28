@@ -23,7 +23,7 @@ class PwmMotorControlNode(Node):
             '/odometry/filtered',
             self.odometry_callback, 
             10)
-            
+        
         # 1. 状態管理変数
         self.current_state = 'STATE_1_START'
         
