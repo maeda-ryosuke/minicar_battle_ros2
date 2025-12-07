@@ -16,6 +16,7 @@ class SelfAreaPublishNode(Node):
                 
         # 最新のオドメトリデータを保存する変数
         self.latest_odom = Odometry()
+        
         # パブリッシャーの設定
         self.state_publisher = self.create_publisher(
             String,
@@ -32,6 +33,10 @@ class SelfAreaPublishNode(Node):
         # 1. 状態管理変数
         self.current_state = 'STATE_1'
         
+        # 周回数
+        self.lap_count = 3
+        
+        
         # チェックポイント座標の定義
         # スタート3の中央からスタートしたと仮定したときの座標
         # スタート位置補正など入れるか、スタート位置を必ず同じにするようにする
@@ -46,6 +51,7 @@ class SelfAreaPublishNode(Node):
             'STATE_1': self.handle_state_1_start,
             'STATE_2': self.handle_state_2_pass_a,
             'STATE_3': self.handle_state_3_pass_b,
+            'STATE_PARKING': self.handle_parking,
         }
         
         # 3. タイマー設定 (制御ループ)
@@ -103,11 +109,25 @@ class SelfAreaPublishNode(Node):
         """
         current_x = self.latest_odom.pose.pose.position.x
         current_y = self.latest_odom.pose.pose.position.y
-                
+                        
         # 2. 遷移判定: CP_Cに到達したか
         if self.is_goal_reached(current_x, current_y, 'CP_C'):
+            # lap_countが3だったら駐車に移行
+            if self.lap_count >= 3:
+                self.transition_to('STATE_PARKING')
+                return
+
             self.transition_to('STATE_1') # 状態1に戻る
+            self.lap_count += 1
                
+    def handle_parking(self):
+        """
+        状態 4: 状態3→1に2回遷移したら駐車に移行 
+        今は何もしない 今後追加するかも？
+        """
+        current_x = self.latest_odom.pose.pose.position.x
+        current_y = self.latest_odom.pose.pose.position.y
+
     def transition_to(self, new_state):
             """ 状態を遷移させ、ログを出力する """
             self.get_logger().info(f'Transition: {self.current_state} -> {new_state}')
