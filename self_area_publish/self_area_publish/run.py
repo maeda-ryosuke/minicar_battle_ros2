@@ -5,14 +5,15 @@ from nav_msgs.msg import Odometry
 from std_msgs.msg import String
 import time
 import json
+import warnings
 
 class SelfAreaPublishNode(Node):
     """
     オドメトリを購読し、自己位置のエリアを判定し、publishするノード
     """
 
-    def __init__(self):
-        super().__init__('self_area_publish_node')
+    def __init__(self, args=None):
+        super().__init__('self_area_publish_node', cli_args=args)
                 
         # 最新のオドメトリデータを保存する変数
         self.latest_odom = Odometry()
@@ -34,17 +35,26 @@ class SelfAreaPublishNode(Node):
         self.current_state = 'STATE_1'
         
         # 周回数
-        self.lap_count = 3
+        self.lap_count = 1
+                
+        # 2. 'start_pos' パラメータを宣言し、デフォルト値を 3 と設定
+        self.declare_parameter('start_pos', 3) 
         
+        # 3. パラメータ値を取得
+        start_pos_param = self.get_parameter('start_pos').get_parameter_value().integer_value
         
         # チェックポイント座標の定義
         # スタート3の中央からスタートしたと仮定したときの座標
         # スタート位置補正など入れるか、スタート位置を必ず同じにするようにする
+        # x1 > x2, y1 > y2
         self.CHECKPOINTS = {
-            'CP_A': {'x1': 3.10, 'y1': -4.0, 'x2': 2.80, 'y2': -6.0}, # 状態1 -> 状態2
-            'CP_B': {'x1': 1.5, 'y1': -2.6, 'x2': 0.5, 'y2': -4.0}, # 状態2 -> 状態3
-            'CP_C': {'x1': 0.0, 'y1': 0.7, 'x2': -0.5, 'y2': -0.7}  # 状態3 -> 状態1 (ループ)
+            'CP_A': {'x1': 0.6, 'y1': -3.3, 'x2': 0.0, 'y2': -6.0}, # 状態1 -> 状態2
+            'CP_B': {'x1': -3.6, 'y1': -1.9, 'x2': -4.1, 'y2': -4.0}, # 状態2 -> 状態3
+            'CP_C': {'x1': -3.1, 'y1': 0.7, 'x2': -3.6, 'y2': -0.7}  # 状態3 -> 状態1 (ループ)
         }
+        
+        # 5. 取得したパラメータ値でチェックポイントを更新
+        self.checkpoint_update(start_pos_param)
         
         # 2. 状態ごとの実行関数を格納した辞書 (Pythonにおけるswitchの代わり)
         self.state_handlers = {
@@ -90,6 +100,8 @@ class SelfAreaPublishNode(Node):
                 
         # 2. 遷移判定: CP_Aに到達したか
         if self.is_goal_reached(current_x, current_y, 'CP_A'):
+            print("current_x: " + str(current_x))
+            print("current_y: " + str(current_y))
             self.transition_to('STATE_2') # 状態2へ
 
     def handle_state_2_pass_a(self):
@@ -101,6 +113,9 @@ class SelfAreaPublishNode(Node):
                 
         # 2. 遷移判定: CP_Bに到達したか
         if self.is_goal_reached(current_x, current_y, 'CP_B'):
+            print("current_x: " + str(current_x))
+            print("current_y: " + str(current_y))
+
             self.transition_to('STATE_3') # 状態3へ
 
     def handle_state_3_pass_b(self):
@@ -112,6 +127,9 @@ class SelfAreaPublishNode(Node):
                         
         # 2. 遷移判定: CP_Cに到達したか
         if self.is_goal_reached(current_x, current_y, 'CP_C'):
+            print("current_x: " + str(current_x))
+            print("current_y: " + str(current_y))
+
             # lap_countが3だったら駐車に移行
             if self.lap_count >= 3:
                 self.transition_to('STATE_PARKING')
@@ -133,6 +151,38 @@ class SelfAreaPublishNode(Node):
             self.get_logger().info(f'Transition: {self.current_state} -> {new_state}')
             self.current_state = new_state
 
+    def checkpoint_update(self, start_pos):
+        """
+        チェックポイントをアップデートする関数
+        """
+    # エリア判定ロジックが int 以外の型を受け付けないように、例外を発生させるのがより堅牢
+        if not isinstance(start_pos, int):
+            raise TypeError(f"引数の型が不正です。int型が期待されましたが、{type(start_pos).__name__}型が渡されました。")
+        
+        # 補正値を初期化
+        offset_x = 0.0 
+
+        if start_pos == 1:
+            print("スタート位置1としてチェックポイントを設定します (オフセット: 0.0)")
+            offset_x = 0.0 # 補正なし
+        elif start_pos == 2:
+            print("スタート位置2としてチェックポイントを更新します (オフセット: +1.8)")
+            offset_x = 1.8
+        elif start_pos == 3:
+            print("スタート位置3としてチェックポイントを更新します (オフセット: +3.6)")
+            offset_x = 3.6
+        else:
+            # 1, 2, 3 以外の値が渡された場合の処理（この構成では発生しにくいが安全のために）
+            print("警告: 1, 2, 3 以外の値が入力されました。デフォルトのスタート位置3を使用します。")
+            offset_x = 3.6
+            
+        # --- 全てのチェックポイントにオフセットを適用 ---
+        for checkpoint_key, coords in self.CHECKPOINTS.items():
+            coords['x1'] += offset_x
+            coords['x2'] += offset_x
+    
+        self.get_logger().info(f"最終チェックポイント座標: {self.CHECKPOINTS}")
+        
     # --- コールバック関数: オドメトリ受信 ---
     def odometry_callback(self, msg):
         """
@@ -167,8 +217,25 @@ class SelfAreaPublishNode(Node):
         """
 
 def main(args=None):
+    
+    # # --- 標準入力からスタート位置を取得 ---
+    # while True:
+    #     try:
+    #         # 標準入力でスタート位置を選択
+    #         input_pos = input("スタート位置を選択してください (1, 2, 3): ")
+            
+    #         # 入力が整数かチェック
+    #         start_pos = int(input_pos)
+            
+    #         if start_pos in [1, 2, 3]:
+    #             break
+    #         else:
+    #             print("1, 2, 3 のいずれかを入力してください。")
+    #     except ValueError:
+    #         print("無効な入力です。整数を入力してください。")
+    
     rclpy.init(args=args)
-    node = SelfAreaPublishNode()
+    node = SelfAreaPublishNode(args=args)
     
     # 重い制御（推論やPWM書き込み）とデータ受信を並列処理するためにMultiThreadedExecutorを使用
     # executor = MultiThreadedExecutor(num_threads=2)
