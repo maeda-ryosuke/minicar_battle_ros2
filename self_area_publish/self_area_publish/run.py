@@ -39,10 +39,12 @@ class SelfAreaPublishNode(Node):
                 
         # 2. 'start_pos' パラメータを宣言し、デフォルト値を 3 と設定
         self.declare_parameter('start_pos', 3) 
+        # コーン周回させるかどうか。デフォルトは0(周回しない)
+        self.declare_parameter('corn_lap', 0)
         
         # 3. パラメータ値を取得
         start_pos_param = self.get_parameter('start_pos').get_parameter_value().integer_value
-        
+        self.corn_lap_param = self.get_parameter('corn_lap').get_parameter_value().integer_value
         # チェックポイント座標の定義
         # スタート3の中央からスタートしたと仮定したときの座標
         # スタート位置補正など入れるか、スタート位置を必ず同じにするようにする
@@ -50,7 +52,8 @@ class SelfAreaPublishNode(Node):
         self.CHECKPOINTS = {
             'CP_A': {'x1': 0.6, 'y1': -3.3, 'x2': 0.0, 'y2': -6.0}, # 状態1 -> 状態2
             'CP_B': {'x1': -3.6, 'y1': -1.9, 'x2': -4.1, 'y2': -3.3}, # 状態2 -> 状態3
-            'CP_C': {'x1': -3.1, 'y1': 0.7, 'x2': -3.6, 'y2': -0.7}  # 状態3 -> 状態1 (ループ)
+            'CP_C': {'x1': -3.1, 'y1': 0.7, 'x2': -3.6, 'y2': -0.7},  # 状態3 -> 状態1 (ループ)
+            'CP_D': {'x1': -3.1, 'y1': 0.7, 'x2': -3.6, 'y2': -0.7}  # 状態3 -> 状態1 (ループ)
         }
         
         # 5. 取得したパラメータ値でチェックポイントを更新
@@ -61,6 +64,7 @@ class SelfAreaPublishNode(Node):
             'STATE_1': self.handle_state_1_start,
             'STATE_2': self.handle_state_2_pass_a,
             'STATE_3': self.handle_state_3_pass_b,
+            'STATE_4': self.handle_state_4_pass_c,
             'STATE_PARKING': self.handle_parking,
         }
         
@@ -116,7 +120,10 @@ class SelfAreaPublishNode(Node):
             print("current_x: " + str(current_x))
             print("current_y: " + str(current_y))
 
-            self.transition_to('STATE_3') # 状態3へ
+            if self.corn_lap_param==0:
+                self.transition_to('STATE_4') # 状態3へ
+            else:
+                self.transition_to('STATE_3') # 状態4へ
 
     def handle_state_3_pass_b(self):
         """ 
@@ -130,6 +137,22 @@ class SelfAreaPublishNode(Node):
             print("current_x: " + str(current_x))
             print("current_y: " + str(current_y))
 
+            self.transition_to('STATE_4') # 状態1に戻る
+            self.lap_count += 1
+               
+               
+    def handle_state_4_pass_c(self):
+        """
+        状態4: CP_C通過後
+        """
+        current_x = self.latest_odom.pose.pose.position.x
+        current_y = self.latest_odom.pose.pose.position.y
+                        
+        # 2. 遷移判定: CP_Cに到達したか
+        if self.is_goal_reached(current_x, current_y, 'CP_D'):
+            print("current_x: " + str(current_x))
+            print("current_y: " + str(current_y))
+
             # lap_countが3だったら駐車に移行
             if self.lap_count >= 3:
                 self.transition_to('STATE_PARKING')
@@ -137,7 +160,7 @@ class SelfAreaPublishNode(Node):
 
             self.transition_to('STATE_1') # 状態1に戻る
             self.lap_count += 1
-               
+
     def handle_parking(self):
         """
         状態 4: 状態3→1に2回遷移したら駐車に移行 
