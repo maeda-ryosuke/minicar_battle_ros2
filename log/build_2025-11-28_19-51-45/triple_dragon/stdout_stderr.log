@@ -1,0 +1,29 @@
+running egg_info
+creating ../build/triple_dragon/triple_dragon.egg-info
+writing ../build/triple_dragon/triple_dragon.egg-info/PKG-INFO
+writing dependency_links to ../build/triple_dragon/triple_dragon.egg-info/dependency_links.txt
+writing entry points to ../build/triple_dragon/triple_dragon.egg-info/entry_points.txt
+writing requirements to ../build/triple_dragon/triple_dragon.egg-info/requires.txt
+writing top-level names to ../build/triple_dragon/triple_dragon.egg-info/top_level.txt
+writing manifest file '../build/triple_dragon/triple_dragon.egg-info/SOURCES.txt'
+reading manifest file '../build/triple_dragon/triple_dragon.egg-info/SOURCES.txt'
+writing manifest file '../build/triple_dragon/triple_dragon.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ryosuke/ros2_ws/src/build/triple_dragon/build
+creating /home/ryosuke/ros2_ws/src/build/triple_dragon/build/lib
+creating /home/ryosuke/ros2_ws/src/build/triple_dragon/build/lib/triple_dragon
+copying triple_dragon/run.py -> /home/ryosuke/ros2_ws/src/build/triple_dragon/build/lib/triple_dragon
+copying triple_dragon/__init__.py -> /home/ryosuke/ros2_ws/src/build/triple_dragon/build/lib/triple_dragon
+running install
+running install_lib
+creating /home/ryosuke/ros2_ws/src/install/triple_dragon/lib/python3.10/site-packages/triple_dragon
+copying /home/ryosuke/ros2_ws/src/build/triple_dragon/build/lib/triple_dragon/run.py -> /home/ryosuke/ros2_ws/src/install/triple_dragon/lib/python3.10/site-packages/triple_dragon
+copying /home/ryosuke/ros2_ws/src/build/triple_dragon/build/lib/triple_dragon/__init__.py -> /home/ryosuke/ros2_ws/src/install/triple_dragon/lib/python3.10/site-packages/triple_dragon
+byte-compiling /home/ryosuke/ros2_ws/src/install/triple_dragon/lib/python3.10/site-packages/triple_dragon/run.py to run.cpython-310.pyc
+byte-compiling /home/ryosuke/ros2_ws/src/install/triple_dragon/lib/python3.10/site-packages/triple_dragon/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/ryosuke/ros2_ws/src/install/triple_dragon/share/ament_index
+creating /home/ryosuke/ros2_ws/src/install/triple_dragon/share/ament_index/resource_index
+creating /home/ryosuke/ros2_ws/src/install/triple_dragon/share/ament_index/resource_index/packages
+error: can't copy 'resource/triple_dragon': doesn't exist or not a regular file

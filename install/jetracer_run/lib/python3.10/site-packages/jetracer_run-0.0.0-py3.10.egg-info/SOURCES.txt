@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../build/jetracer_run/jetracer_run.egg-info/PKG-INFO
+../build/jetracer_run/jetracer_run.egg-info/SOURCES.txt
+../build/jetracer_run/jetracer_run.egg-info/dependency_links.txt
+../build/jetracer_run/jetracer_run.egg-info/entry_points.txt
+../build/jetracer_run/jetracer_run.egg-info/requires.txt
+../build/jetracer_run/jetracer_run.egg-info/top_level.txt
+../build/jetracer_run/jetracer_run.egg-info/zip-safe
+jetracer_run/__init__.py
+jetracer_run/run.py
+resource/jetracer_run
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

@@ -1,0 +1,3 @@
+[console_scripts]
+triple_dragon = triple_dragon.run:main
+

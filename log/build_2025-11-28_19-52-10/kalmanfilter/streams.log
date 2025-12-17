@@ -1,0 +1,21 @@
+[1.489s] Invoking command in '/home/ryosuke/ros2_ws/src/kalmanfilter': PYTHONPATH=/home/ryosuke/ros2_ws/src/build/kalmanfilter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryosuke/ros2_ws/src/install/kalmanfilter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/kalmanfilter build --build-base /home/ryosuke/ros2_ws/src/build/kalmanfilter/build install --record /home/ryosuke/ros2_ws/src/build/kalmanfilter/install.log --single-version-externally-managed install_data
+[1.652s] running egg_info
+[1.652s] writing ../build/kalmanfilter/kalmanfilter.egg-info/PKG-INFO
+[1.652s] writing dependency_links to ../build/kalmanfilter/kalmanfilter.egg-info/dependency_links.txt
+[1.652s] writing entry points to ../build/kalmanfilter/kalmanfilter.egg-info/entry_points.txt
+[1.653s] writing requirements to ../build/kalmanfilter/kalmanfilter.egg-info/requires.txt
+[1.653s] writing top-level names to ../build/kalmanfilter/kalmanfilter.egg-info/top_level.txt
+[1.654s] reading manifest file '../build/kalmanfilter/kalmanfilter.egg-info/SOURCES.txt'
+[1.654s] writing manifest file '../build/kalmanfilter/kalmanfilter.egg-info/SOURCES.txt'
+[1.654s] running build
+[1.654s] running build_py
+[1.654s] running install
+[1.655s] running install_lib
+[1.656s] running install_data
+[1.656s] running install_egg_info
+[1.657s] removing '/home/ryosuke/ros2_ws/src/install/kalmanfilter/lib/python3.10/site-packages/kalmanfilter-0.0.0-py3.10.egg-info' (and everything under it)
+[1.657s] Copying ../build/kalmanfilter/kalmanfilter.egg-info to /home/ryosuke/ros2_ws/src/install/kalmanfilter/lib/python3.10/site-packages/kalmanfilter-0.0.0-py3.10.egg-info
+[1.658s] running install_scripts
+[1.674s] Installing clock_publisher script to /home/ryosuke/ros2_ws/src/install/kalmanfilter/lib/kalmanfilter
+[1.675s] writing list of installed files to '/home/ryosuke/ros2_ws/src/build/kalmanfilter/install.log'
+[1.739s] Invoked command in '/home/ryosuke/ros2_ws/src/kalmanfilter' returned '0': PYTHONPATH=/home/ryosuke/ros2_ws/src/build/kalmanfilter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryosuke/ros2_ws/src/install/kalmanfilter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/kalmanfilter build --build-base /home/ryosuke/ros2_ws/src/build/kalmanfilter/build install --record /home/ryosuke/ros2_ws/src/build/kalmanfilter/install.log --single-version-externally-managed install_data

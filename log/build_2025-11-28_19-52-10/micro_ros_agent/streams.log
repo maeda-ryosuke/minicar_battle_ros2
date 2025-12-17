@@ -1,0 +1,321 @@
+[0.010s] Invoking command in '/home/ryosuke/ros2_ws/src/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs:/home/ryosuke/ros2_ws/install/micro_ros_setup:/home/ryosuke/ros2_ws/install/micro_ros_agent:/home/ryosuke/ros2_ws/install/micro_ros_msgs:/home/ryosuke/ros2_ws/install/self_area_publish:/home/ryosuke/ros2_ws/install/jetracer_run:/home/ryosuke/ros2_ws/install/kalmanfilter:/opt/ros/humble LD_LIBRARY_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ryosuke/ros2_ws/src/uros/micro-ROS-Agent/micro_ros_agent -DCMAKE_INSTALL_PREFIX=/home/ryosuke/ros2_ws/src/install/micro_ros_agent
+[0.074s] -- The C compiler identification is GNU 11.4.0
+[0.081s] -- Detecting C compiler ABI info
+[0.153s] -- Detecting C compiler ABI info - done
+[0.157s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.158s] -- Detecting C compile features
+[0.158s] -- Detecting C compile features - done
+[0.200s] -- The CXX compiler identification is GNU 11.4.0
+[0.206s] -- Detecting CXX compiler ABI info
+[0.287s] -- Detecting CXX compiler ABI info - done
+[0.291s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.291s] -- Detecting CXX compile features
+[0.292s] -- Detecting CXX compile features - done
+[0.315s] -- Configuring done
+[0.317s] -- Generating done
+[0.318s] -- Build files have been written to: /home/ryosuke/ros2_ws/src/build/micro_ros_agent
+[0.323s] Invoked command in '/home/ryosuke/ros2_ws/src/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs:/home/ryosuke/ros2_ws/install/micro_ros_setup:/home/ryosuke/ros2_ws/install/micro_ros_agent:/home/ryosuke/ros2_ws/install/micro_ros_msgs:/home/ryosuke/ros2_ws/install/self_area_publish:/home/ryosuke/ros2_ws/install/jetracer_run:/home/ryosuke/ros2_ws/install/kalmanfilter:/opt/ros/humble LD_LIBRARY_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ryosuke/ros2_ws/src/uros/micro-ROS-Agent/micro_ros_agent -DCMAKE_INSTALL_PREFIX=/home/ryosuke/ros2_ws/src/install/micro_ros_agent
+[0.325s] Invoking command in '/home/ryosuke/ros2_ws/src/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs:/home/ryosuke/ros2_ws/install/micro_ros_setup:/home/ryosuke/ros2_ws/install/micro_ros_agent:/home/ryosuke/ros2_ws/install/micro_ros_msgs:/home/ryosuke/ros2_ws/install/self_area_publish:/home/ryosuke/ros2_ws/install/jetracer_run:/home/ryosuke/ros2_ws/install/kalmanfilter:/opt/ros/humble LD_LIBRARY_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ryosuke/ros2_ws/src/build/micro_ros_agent -- -j16 -l16
+[0.375s] [  6%] [34m[1mCreating directories for 'xrceagent'[0m
+[0.438s] [ 12%] [34m[1mPerforming download step (git clone) for 'xrceagent'[0m
+[0.462s] Cloning into 'xrceagent'...
+[9.011s] HEAD is now at 57d0862 Release v2.4.2
+[9.072s] [ 18%] [34m[1mPerforming update step for 'xrceagent'[0m
+[9.101s] [ 25%] [34m[1mNo patch step for 'xrceagent'[0m
+[9.125s] [ 31%] [34m[1mPerforming configure step for 'xrceagent'[0m
+[9.133s] loading initial cache file /home/ryosuke/ros2_ws/src/build/micro_ros_agent/agent/tmp/xrceagent-cache-.cmake
+[9.181s] -- The C compiler identification is GNU 11.4.0
+[9.187s] -- Detecting C compiler ABI info
+[9.260s] -- Detecting C compiler ABI info - done
+[9.265s] -- Check for working C compiler: /usr/bin/cc - skipped
+[9.266s] -- Detecting C compile features
+[9.266s] -- Detecting C compile features - done
+[9.308s] -- The CXX compiler identification is GNU 11.4.0
+[9.315s] -- Detecting CXX compiler ABI info
+[9.393s] -- Detecting CXX compiler ABI info - done
+[9.397s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[9.398s] -- Detecting CXX compile features
+[9.398s] -- Detecting CXX compile features - done
+[9.402s] -- Looking for pthread.h
+[9.479s] -- Looking for pthread.h - found
+[9.479s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.553s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[9.554s] -- Found Threads: TRUE  
+[9.561s] -- Configuring done
+[9.563s] -- Generating done
+[9.563s] -- Build files have been written to: /home/ryosuke/ros2_ws/src/build/micro_ros_agent/agent/src/xrceagent-build
+[9.586s] [ 37%] [34m[1mPerforming build step for 'xrceagent'[0m
+[9.633s] [ 12%] [34m[1mCreating directories for 'uagent'[0m
+[9.696s] [ 25%] [34m[1mNo download step for 'uagent'[0m
+[9.721s] [ 37%] [34m[1mNo update step for 'uagent'[0m
+[9.746s] [ 50%] [34m[1mNo patch step for 'uagent'[0m
+[9.773s] [ 62%] [34m[1mPerforming configure step for 'uagent'[0m
+[9.782s] loading initial cache file /home/ryosuke/ros2_ws/src/build/micro_ros_agent/agent/src/xrceagent-build/uagent-prefix/tmp/uagent-cache-.cmake
+[9.785s] -- Setting build type to 'Release' as none was specified.
+[9.803s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[9.804s]   The package name passed to `find_package_handle_standard_args` (tinyxml2)
+[9.804s]   does not match the name of the calling package (TinyXML2).  This can lead
+[9.804s]   to problems in calling code that expects `find_package` result variables
+[9.804s]   (e.g., `_FOUND`) to follow a certain pattern.
+[9.804s] Call Stack (most recent call first):
+[9.804s]   cmake/modules/FindTinyXML2.cmake:40 (find_package_handle_standard_args)
+[9.804s]   /opt/ros/humble/share/fastrtps/cmake/fastrtps-config.cmake:51 (find_package)
+[9.804s]   CMakeLists.txt:153 (find_package)
+[9.804s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[9.804s] [0m
+[9.804s] -- Found tinyxml2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  
+[9.865s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[9.870s] -- Configuring done
+[9.877s] -- Generating done
+[9.877s] -- Build files have been written to: /home/ryosuke/ros2_ws/src/build/micro_ros_agent/agent/src/xrceagent-build
+[9.898s] [ 75%] [34m[1mPerforming build step for 'uagent'[0m
+[9.951s] [ 21%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Root.cpp.o[0m
+[9.951s] [ 28%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/XRCETypes.cpp.o[0m
+[9.951s] [ 33%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datawriter/DataWriter.cpp.o[0m
+[9.951s] [ 21%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datareader/DataReader.cpp.o[0m
+[9.951s] [ 21%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/publisher/Publisher.cpp.o[0m
+[9.951s] [ 21%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/processor/Processor.cpp.o[0m
+[9.951s] [ 21%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/subscriber/Subscriber.cpp.o[0m
+[9.951s] [ 21%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Agent.cpp.o[0m
+[9.951s] [ 38%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/client/ProxyClient.cpp.o[0m
+[9.951s] [ 38%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/MessageHeader.cpp.o[0m
+[9.952s] [ 38%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/replier/Replier.cpp.o[0m
+[9.952s] [ 38%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/participant/Participant.cpp.o[0m
+[9.952s] [ 21%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/requester/Requester.cpp.o[0m
+[9.952s] [ 21%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/object/XRCEObject.cpp.o[0m
+[9.952s] [ 38%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/topic/Topic.cpp.o[0m
+[9.952s] [ 38%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/AgentInstance.cpp.o[0m
+[10.697s] [ 40%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/SubMessageHeader.cpp.o[0m
+[10.699s] [ 42%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/InputMessage.cpp.o[0m
+[11.455s] [ 45%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/OutputMessage.cpp.o[0m
+[11.468s] [ 47%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/utils/ArgumentParser.cpp.o[0m
+[11.492s] [ 50%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/Server.cpp.o[0m
+[11.506s] [ 52%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/stream_framing/StreamFramingProtocol.cpp.o[0m
+[11.527s] [ 54%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/custom/CustomAgent.cpp.o[0m
+[11.747s] [ 57%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv4AgentLinux.cpp.o[0m
+[13.123s] [ 59%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv6AgentLinux.cpp.o[0m
+[13.742s] [ 61%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv4AgentLinux.cpp.o[0m
+[13.776s] [ 64%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv6AgentLinux.cpp.o[0m
+[13.785s] [ 66%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/SerialAgentLinux.cpp.o[0m
+[13.856s] [ 69%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/TermiosAgentLinux.cpp.o[0m
+[13.948s] [ 71%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiSerialAgentLinux.cpp.o[0m
+[14.389s] [ 73%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiTermiosAgentLinux.cpp.o[0m
+[14.492s] [ 76%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/PseudoTerminalAgentLinux.cpp.o[0m
+[14.901s] [ 78%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/can/CanAgentLinux.cpp.o[0m
+[15.396s] [ 80%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServerLinux.cpp.o[0m
+[15.575s] [ 83%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServer.cpp.o[0m
+[16.048s] [ 85%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/TopicPubSubType.cpp.o[0m
+[16.311s] [ 88%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/xmlobjects/xmlobjects.cpp.o[0m
+[16.812s] [ 90%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastEntities.cpp.o[0m
+[16.988s] [ 92%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastMiddleware.cpp.o[0m
+[17.037s] [ 95%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSEntities.cpp.o[0m
+[17.077s] [ 97%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSMiddleware.cpp.o[0m
+[21.790s] [100%] [32m[1mLinking CXX shared library libmicroxrcedds_agent.so[0m
+[22.018s] [100%] Built target microxrcedds_agent
+[22.042s] [34m[1mNo install step for 'uagent'[0m
+[22.060s] [34m[1mCompleted 'uagent'[0m
+[22.084s] Built target uagent
+[22.107s] [ 43%] [34m[1mPerforming install step for 'xrceagent'[0m
+[22.142s] [35m[1mConsolidate compiler generated dependencies of target microxrcedds_agent[0m
+[22.178s] [100%] Built target microxrcedds_agent
+[22.195s] [36mInstall the project...[0m
+[22.202s] -- Install configuration: "Release"
+[22.202s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.2
+[22.204s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4
+[22.205s] -- Set runtime path of "/home/ryosuke/ros2_ws/src/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.2" to ""
+[22.205s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/lib/libmicroxrcedds_agent.so
+[22.205s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent
+[22.205s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/publisher
+[22.205s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/publisher/Publisher.hpp
+[22.205s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/message
+[22.205s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/message/OutputMessage.hpp
+[22.205s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/message/InputMessage.hpp
+[22.205s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/message/Packet.hpp
+[22.205s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/visibility.hpp
+[22.205s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/Agent.hpp
+[22.205s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/types
+[22.205s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/types/SubMessageHeader.hpp
+[22.205s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/types/MessageHeader.hpp
+[22.206s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/types/TopicPubSubType.hpp
+[22.206s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/types/Optional.hpp
+[22.206s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/types/XRCETypes.hpp
+[22.206s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/topic
+[22.206s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/topic/Topic.hpp
+[22.206s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/Root.hpp
+[22.206s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/middleware
+[22.206s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/middleware/fast
+[22.206s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastMiddleware.hpp
+[22.206s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastEntities.hpp
+[22.206s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/middleware/Middleware.hpp
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/middleware/utils
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/middleware/utils/Callbacks.hpp
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/middleware/ced
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedMiddleware.hpp
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedEntities.hpp
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/middleware/fastdds
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSEntities.hpp
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSMiddleware.hpp
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/stream_framing
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/stream_framing/StreamFramingProtocol.hpp
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/Server.hpp
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/tcp
+[22.207s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentLinux.hpp
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPServerBase.hpp
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentWindows.hpp
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentWindows.hpp
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPConnection.hpp
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentLinux.hpp
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/TransportRc.hpp
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/p2p
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscoverer.hpp
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscovererLinux.hpp
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/custom
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/custom/CustomAgent.hpp
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/udp
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentLinux.hpp
+[22.208s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentWindows.hpp
+[22.209s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentLinux.hpp
+[22.209s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentWindows.hpp
+[22.209s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/serial
+[22.209s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/serial/TermiosAgentLinux.hpp
+[22.209s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiTermiosAgentLinux.hpp
+[22.209s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/serial/baud_rate_table_linux.h
+[22.209s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/serial/PseudoTerminalAgentLinux.hpp
+[22.209s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/serial/SerialAgentLinux.hpp
+[22.209s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiSerialAgentLinux.hpp
+[22.209s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/SessionManager.hpp
+[22.209s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/endpoint
+[22.209s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/endpoint/SerialEndPoint.hpp
+[22.209s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv4EndPoint.hpp
+[22.210s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CustomEndPoint.hpp
+[22.210s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv6EndPoint.hpp
+[22.210s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/endpoint/MultiSerialEndPoint.hpp
+[22.210s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CanEndPoint.hpp
+[22.210s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/util
+[22.210s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceWindows.hpp
+[22.210s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceLinux.hpp
+[22.210s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/discovery
+[22.210s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerWindows.hpp
+[22.210s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerLinux.hpp
+[22.210s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServer.hpp
+[22.210s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/can
+[22.210s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/transport/can/CanAgentLinux.hpp
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/processor
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/processor/Processor.hpp
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/AgentInstance.hpp
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/reader
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/reader/Reader.hpp
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/replier
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/replier/Replier.hpp
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/object
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/object/XRCEObject.hpp
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/p2p
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/p2p/InternalClientManager.hpp
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/p2p/InternalClient.hpp
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/participant
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/participant/Participant.hpp
+[22.211s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/utils
+[22.212s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/utils/SharedMutex.hpp
+[22.212s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/utils/ArgumentParser.hpp
+[22.212s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/utils/Color.hpp
+[22.212s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/utils/Conversion.hpp
+[22.212s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/utils/TokenBucket.hpp
+[22.212s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/utils/SeqNum.hpp
+[22.212s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/utils/SharedMutexPriority.hpp
+[22.212s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/utils/Time.hpp
+[22.212s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/utils/Functions.hpp
+[22.212s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/client
+[22.212s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/client/session
+[22.212s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/client/session/Session.hpp
+[22.212s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/client/session/stream
+[22.213s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/client/session/stream/OutputStream.hpp
+[22.213s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/client/session/stream/InputStream.hpp
+[22.213s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/client/session/SessionInfo.hpp
+[22.213s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/client/ProxyClient.hpp
+[22.213s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/logger
+[22.213s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/logger/Logger.hpp
+[22.213s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/datareader
+[22.213s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/datareader/DataReader.hpp
+[22.213s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/subscriber
+[22.213s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/subscriber/Subscriber.hpp
+[22.213s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/datawriter
+[22.213s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/datawriter/DataWriter.hpp
+[22.213s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/scheduler
+[22.214s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/scheduler/PacketScheduler.hpp
+[22.214s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/scheduler/Scheduler.hpp
+[22.214s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/requester
+[22.214s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/requester/Requester.hpp
+[22.214s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets.cmake
+[22.214s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets-release.cmake
+[22.214s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/include/uxr/agent/config.hpp
+[22.214s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/microxrcedds_agent/LICENSE
+[22.214s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfig.cmake
+[22.214s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfigVersion.cmake
+[22.230s] [ 50%] [34m[1mCompleted 'xrceagent'[0m
+[22.257s] [ 50%] Built target xrceagent
+[22.276s] [ 56%] [34m[1mCreating directories for 'micro_ros_agent'[0m
+[22.334s] [ 62%] [34m[1mNo download step for 'micro_ros_agent'[0m
+[22.352s] [ 68%] [34m[1mNo update step for 'micro_ros_agent'[0m
+[22.371s] [ 75%] [34m[1mNo patch step for 'micro_ros_agent'[0m
+[22.394s] [ 81%] [34m[1mPerforming configure step for 'micro_ros_agent'[0m
+[22.402s] loading initial cache file /home/ryosuke/ros2_ws/src/build/micro_ros_agent/micro_ros_agent-prefix/tmp/micro_ros_agent-cache-.cmake
+[22.412s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[22.527s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[22.664s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[22.669s] -- Looking for C++ include pthread.h
+[22.741s] -- Looking for C++ include pthread.h - found
+[22.742s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[22.818s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[22.819s] -- Found Threads: TRUE  
+[22.824s] -- Found rosidl_cmake: 3.1.7 (/opt/ros/humble/share/rosidl_cmake/cmake)
+[22.826s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[22.842s] -- Found fastrtps_cmake_module: 2.2.2 (/opt/ros/humble/share/fastrtps_cmake_module/cmake)
+[22.844s] -- Found rmw_dds_common: 1.6.0 (/opt/ros/humble/share/rmw_dds_common/cmake)
+[22.871s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[22.878s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[22.884s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[22.894s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[22.910s] -- Found rmw_fastrtps_shared_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_shared_cpp/cmake)
+[22.950s] -- Found FastRTPS: /opt/ros/humble/include  
+[22.951s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[22.954s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[22.955s] -- Found micro_ros_msgs: 3.0.1 (/home/ryosuke/ros2_ws/src/install/micro_ros_msgs/share/micro_ros_msgs/cmake)
+[23.005s] -- Configuring done
+[23.011s] -- Generating done
+[23.013s] -- Build files have been written to: /home/ryosuke/ros2_ws/src/build/micro_ros_agent
+[23.033s] [ 87%] [34m[1mPerforming build step for 'micro_ros_agent'[0m
+[23.071s] [ 50%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/Agent.cpp.o[0m
+[23.072s] [ 50%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/main.cpp.o[0m
+[23.072s] [ 50%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/utils/demangle.cpp.o[0m
+[23.072s] [ 83%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_manager.cpp.o[0m
+[23.072s] [ 83%] [32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_typesupport.cpp.o[0m
+[25.461s] [100%] [32m[1mLinking CXX executable micro_ros_agent[0m
+[25.689s] [100%] Built target micro_ros_agent
+[25.710s] [34m[1mNo install step for 'micro_ros_agent'[0m
+[25.730s] [34m[1mCompleted 'micro_ros_agent'[0m
+[25.753s] Built target micro_ros_agent
+[25.765s] Invoked command in '/home/ryosuke/ros2_ws/src/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs:/home/ryosuke/ros2_ws/install/micro_ros_setup:/home/ryosuke/ros2_ws/install/micro_ros_agent:/home/ryosuke/ros2_ws/install/micro_ros_msgs:/home/ryosuke/ros2_ws/install/self_area_publish:/home/ryosuke/ros2_ws/install/jetracer_run:/home/ryosuke/ros2_ws/install/kalmanfilter:/opt/ros/humble LD_LIBRARY_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ryosuke/ros2_ws/src/build/micro_ros_agent -- -j16 -l16
+[25.766s] Invoking command in '/home/ryosuke/ros2_ws/src/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs:/home/ryosuke/ros2_ws/install/micro_ros_setup:/home/ryosuke/ros2_ws/install/micro_ros_agent:/home/ryosuke/ros2_ws/install/micro_ros_msgs:/home/ryosuke/ros2_ws/install/self_area_publish:/home/ryosuke/ros2_ws/install/jetracer_run:/home/ryosuke/ros2_ws/install/kalmanfilter:/opt/ros/humble LD_LIBRARY_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ryosuke/ros2_ws/src/build/micro_ros_agent
+[25.771s] -- Install configuration: ""
+[25.771s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/ament_index/resource_index/package_run_dependencies/micro_ros_agent
+[25.771s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/ament_index/resource_index/parent_prefix_path/micro_ros_agent
+[25.772s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.sh
+[25.772s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.dsv
+[25.772s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/environment/path.sh
+[25.772s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/environment/path.dsv
+[25.772s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/local_setup.bash
+[25.772s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/local_setup.sh
+[25.772s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/local_setup.zsh
+[25.772s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/local_setup.dsv
+[25.772s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/package.dsv
+[25.772s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/ament_index/resource_index/packages/micro_ros_agent
+[25.772s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/cmake/ament_cmake_export_dependencies-extras.cmake
+[25.773s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig.cmake
+[25.773s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig-version.cmake
+[25.773s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/package.xml
+[25.773s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent
+[25.775s] -- Set runtime path of "/home/ryosuke/ros2_ws/src/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent" to ""
+[25.775s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/launch
+[25.775s] -- Installing: /home/ryosuke/ros2_ws/src/install/micro_ros_agent/share/micro_ros_agent/launch/micro_ros_agent_launch.py
+[25.778s] Invoked command in '/home/ryosuke/ros2_ws/src/build/micro_ros_agent' returned '0': AMENT_PREFIX_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs:/home/ryosuke/ros2_ws/install/micro_ros_setup:/home/ryosuke/ros2_ws/install/micro_ros_agent:/home/ryosuke/ros2_ws/install/micro_ros_msgs:/home/ryosuke/ros2_ws/install/self_area_publish:/home/ryosuke/ros2_ws/install/jetracer_run:/home/ryosuke/ros2_ws/install/kalmanfilter:/opt/ros/humble LD_LIBRARY_PATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ryosuke/ros2_ws/src/install/micro_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ryosuke/ros2_ws/src/build/micro_ros_agent

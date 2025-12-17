@@ -1,0 +1,6 @@
+source;share/triple_dragon/hook/pythonpath.ps1
+source;share/triple_dragon/hook/pythonpath.dsv
+source;share/triple_dragon/hook/pythonpath.sh
+source;share/triple_dragon/hook/ament_prefix_path.ps1
+source;share/triple_dragon/hook/ament_prefix_path.dsv
+source;share/triple_dragon/hook/ament_prefix_path.sh

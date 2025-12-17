@@ -1,0 +1,36 @@
+[1.176s] Invoking command in '/home/ryosuke/ros2_ws/src/self_area_publish': PYTHONPATH=/home/ryosuke/ros2_ws/src/build/self_area_publish/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryosuke/ros2_ws/src/install/self_area_publish/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/self_area_publish build --build-base /home/ryosuke/ros2_ws/src/build/self_area_publish/build install --record /home/ryosuke/ros2_ws/src/build/self_area_publish/install.log --single-version-externally-managed install_data
+[1.345s] running egg_info
+[1.345s] creating ../build/self_area_publish/self_area_publish.egg-info
+[1.346s] writing ../build/self_area_publish/self_area_publish.egg-info/PKG-INFO
+[1.346s] writing dependency_links to ../build/self_area_publish/self_area_publish.egg-info/dependency_links.txt
+[1.346s] writing entry points to ../build/self_area_publish/self_area_publish.egg-info/entry_points.txt
+[1.346s] writing requirements to ../build/self_area_publish/self_area_publish.egg-info/requires.txt
+[1.346s] writing top-level names to ../build/self_area_publish/self_area_publish.egg-info/top_level.txt
+[1.346s] writing manifest file '../build/self_area_publish/self_area_publish.egg-info/SOURCES.txt'
+[1.347s] reading manifest file '../build/self_area_publish/self_area_publish.egg-info/SOURCES.txt'
+[1.348s] writing manifest file '../build/self_area_publish/self_area_publish.egg-info/SOURCES.txt'
+[1.348s] running build
+[1.348s] running build_py
+[1.348s] creating /home/ryosuke/ros2_ws/src/build/self_area_publish/build
+[1.348s] creating /home/ryosuke/ros2_ws/src/build/self_area_publish/build/lib
+[1.348s] creating /home/ryosuke/ros2_ws/src/build/self_area_publish/build/lib/self_area_publish
+[1.348s] copying self_area_publish/run.py -> /home/ryosuke/ros2_ws/src/build/self_area_publish/build/lib/self_area_publish
+[1.348s] copying self_area_publish/__init__.py -> /home/ryosuke/ros2_ws/src/build/self_area_publish/build/lib/self_area_publish
+[1.348s] running install
+[1.348s] running install_lib
+[1.348s] creating /home/ryosuke/ros2_ws/src/install/self_area_publish/lib/python3.10/site-packages/self_area_publish
+[1.348s] copying /home/ryosuke/ros2_ws/src/build/self_area_publish/build/lib/self_area_publish/run.py -> /home/ryosuke/ros2_ws/src/install/self_area_publish/lib/python3.10/site-packages/self_area_publish
+[1.349s] copying /home/ryosuke/ros2_ws/src/build/self_area_publish/build/lib/self_area_publish/__init__.py -> /home/ryosuke/ros2_ws/src/install/self_area_publish/lib/python3.10/site-packages/self_area_publish
+[1.349s] byte-compiling /home/ryosuke/ros2_ws/src/install/self_area_publish/lib/python3.10/site-packages/self_area_publish/run.py to run.cpython-310.pyc
+[1.350s] byte-compiling /home/ryosuke/ros2_ws/src/install/self_area_publish/lib/python3.10/site-packages/self_area_publish/__init__.py to __init__.cpython-310.pyc
+[1.350s] running install_data
+[1.350s] creating /home/ryosuke/ros2_ws/src/install/self_area_publish/share/ament_index
+[1.350s] creating /home/ryosuke/ros2_ws/src/install/self_area_publish/share/ament_index/resource_index
+[1.350s] creating /home/ryosuke/ros2_ws/src/install/self_area_publish/share/ament_index/resource_index/packages
+[1.350s] copying resource/self_area_publish -> /home/ryosuke/ros2_ws/src/install/self_area_publish/share/ament_index/resource_index/packages
+[1.350s] copying package.xml -> /home/ryosuke/ros2_ws/src/install/self_area_publish/share/self_area_publish
+[1.350s] running install_egg_info
+[1.352s] Copying ../build/self_area_publish/self_area_publish.egg-info to /home/ryosuke/ros2_ws/src/install/self_area_publish/lib/python3.10/site-packages/self_area_publish-0.0.0-py3.10.egg-info
+[1.352s] running install_scripts
+[1.369s] Installing self_area_pub script to /home/ryosuke/ros2_ws/src/install/self_area_publish/lib/self_area_publish
+[1.369s] writing list of installed files to '/home/ryosuke/ros2_ws/src/build/self_area_publish/install.log'

@@ -1,0 +1,20 @@
+running egg_info
+writing ../build/triple_dragon/triple_dragon.egg-info/PKG-INFO
+writing dependency_links to ../build/triple_dragon/triple_dragon.egg-info/dependency_links.txt
+writing entry points to ../build/triple_dragon/triple_dragon.egg-info/entry_points.txt
+writing requirements to ../build/triple_dragon/triple_dragon.egg-info/requires.txt
+writing top-level names to ../build/triple_dragon/triple_dragon.egg-info/top_level.txt
+reading manifest file '../build/triple_dragon/triple_dragon.egg-info/SOURCES.txt'
+writing manifest file '../build/triple_dragon/triple_dragon.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying resource/triple_dragon -> /home/ryosuke/ros2_ws/src/install/triple_dragon/share/ament_index/resource_index/packages
+copying package.xml -> /home/ryosuke/ros2_ws/src/install/triple_dragon/share/triple_dragon
+running install_egg_info
+Copying ../build/triple_dragon/triple_dragon.egg-info to /home/ryosuke/ros2_ws/src/install/triple_dragon/lib/python3.10/site-packages/triple_dragon-0.0.0-py3.10.egg-info
+running install_scripts
+Installing triple_dragon script to /home/ryosuke/ros2_ws/src/install/triple_dragon/lib/triple_dragon
+writing list of installed files to '/home/ryosuke/ros2_ws/src/build/triple_dragon/install.log'

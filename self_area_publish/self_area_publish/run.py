@@ -6,6 +6,8 @@ from std_msgs.msg import String
 import time
 import json
 import warnings
+from tf_transformations import euler_from_quaternion
+import math
 
 class SelfAreaPublishNode(Node):
     """
@@ -36,7 +38,10 @@ class SelfAreaPublishNode(Node):
         
         # 周回数
         self.lap_count = 1
-                
+        # コーン周回数
+        self.lap_corn_count = 0
+        # 前回の角度(コーン周回判定用)
+        self.last_relative_angle = None
         # 2. 'start_pos' パラメータを宣言し、デフォルト値を 3 と設定
         self.declare_parameter('start_pos', 3) 
         # コーン周回させるかどうか。デフォルトは0(周回しない)
@@ -56,6 +61,7 @@ class SelfAreaPublishNode(Node):
             'CP_D': {'x1': -3.1, 'y1': 0.7, 'x2': -3.6, 'y2': -0.7}  # 状態3 -> 状態1 (ループ)
         }
         
+        self.CORN_POS = [0.0, -1.9]
         # 5. 取得したパラメータ値でチェックポイントを更新
         self.checkpoint_update(start_pos_param)
         
@@ -94,6 +100,38 @@ class SelfAreaPublishNode(Node):
             
             return reach_goal
     
+    def corn_lap_judge(self, x, y):
+        """
+        コーン周回をしたかどうか判定する関数
+        """
+        diff_x = x - self.CORN_POS[0]
+        diff_y = y - self.CORN_POS[1]
+        # 今のコーンとの相対角度を計算
+        angle_rad = math.atan2(diff_y, diff_x)
+        
+        # 初回実行時の処理
+        if self.last_relative_angle is None:
+            self.last_relative_angle = angle_rad
+            # 初回は周回ではないため False を返す
+            return False
+        
+        # コーンとの相対角度が0以上かつ、前回角度が0以下だったらコーン周回カウント+1
+        print("current_x : " + str(x))
+        print("current_y : " + str(y))
+        print("diff_x : " + str(diff_x))
+        print("diff_y : " + str(diff_y))
+        print("angle_rad : " + str(angle_rad))
+        # print("last_angle : " + str(self.last_relative_angle))
+        if angle_rad > 0.0 and self.last_relative_angle <= 0.0:
+            self.lap_corn_count += 1
+        self.last_relative_angle = angle_rad
+
+        # 6. 3周完了したか判定
+        if self.lap_corn_count >= 3:
+            return True
+        else:
+            return False
+        
     def handle_state_1_start(self):
         """ 
         状態 1: スタート (CP_Aに向かって走行) 
@@ -127,18 +165,25 @@ class SelfAreaPublishNode(Node):
 
     def handle_state_3_pass_b(self):
         """ 
-        状態 3: CP_B通過後 (CP_Cに向かって走行し、初期状態に戻る) 
+        状態 3: CP_B通過後 コーンを周回したらSTATE_4へ
         """
         current_x = self.latest_odom.pose.pose.position.x
         current_y = self.latest_odom.pose.pose.position.y
-                        
+        orientation_q = self.latest_odom.pose.pose.orientation
+        # # euler_from_quaternion 関数は、[x, y, z, w] の順序のリストを引数に取ります。
+        # orientation_list = [orientation_q.x, orientation_q.y, orientation_q.z, orientation_q.w]
+        # # 3. euler_from_quaternion関数でロール(roll), ピッチ(pitch), ヨー(yaw)に変換
+        # (roll, pitch, yaw) = euler_from_quaternion(orientation_list)
+        
+        # current_th = yaw  # ラジアン値 (-π から +π)     
+        
         # 2. 遷移判定: CP_Cに到達したか
-        if self.is_goal_reached(current_x, current_y, 'CP_C'):
-            print("current_x: " + str(current_x))
-            print("current_y: " + str(current_y))
+        # print("lap_corn_count : " + str(self.lap_corn_count))
+        if self.corn_lap_judge(current_x, current_y):
+            print("lap_corn_count : " + str(self.lap_corn_count))
+            print("コーン周回数が3になったためSTATE_4へ遷移します")
 
             self.transition_to('STATE_4') # 状態1に戻る
-            self.lap_count += 1
                
                
     def handle_state_4_pass_c(self):
@@ -159,7 +204,10 @@ class SelfAreaPublishNode(Node):
                 return
 
             self.transition_to('STATE_1') # 状態1に戻る
+            # 周回数を+1
             self.lap_count += 1
+            # コーン周回カウントをリセット(各ラップでカウントするため)
+            self.lap_corn_count = 0
 
     def handle_parking(self):
         """
@@ -204,6 +252,8 @@ class SelfAreaPublishNode(Node):
             coords['x1'] += offset_x
             coords['x2'] += offset_x
     
+        # コーンにも適用
+        self.CORN_POS[0] += offset_x
         self.get_logger().info(f"最終チェックポイント座標: {self.CHECKPOINTS}")
         
     # --- コールバック関数: オドメトリ受信 ---

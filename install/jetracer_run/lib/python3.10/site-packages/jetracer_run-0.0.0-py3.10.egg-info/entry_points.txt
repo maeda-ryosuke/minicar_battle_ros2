@@ -1,0 +1,3 @@
+[console_scripts]
+jetracer_run = jetracer_run.run:main
+

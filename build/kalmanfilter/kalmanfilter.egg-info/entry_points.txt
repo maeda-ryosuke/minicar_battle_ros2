@@ -1,0 +1,3 @@
+[console_scripts]
+clock_publisher = kalmanfilter.scripts.clock_publisher:main
+

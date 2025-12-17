@@ -1,0 +1,36 @@
+[1.166s] Invoking command in '/home/ryosuke/ros2_ws/src/jetracer_run': PYTHONPATH=/home/ryosuke/ros2_ws/src/build/jetracer_run/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryosuke/ros2_ws/src/install/jetracer_run/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/jetracer_run build --build-base /home/ryosuke/ros2_ws/src/build/jetracer_run/build install --record /home/ryosuke/ros2_ws/src/build/jetracer_run/install.log --single-version-externally-managed install_data
+[1.338s] running egg_info
+[1.338s] creating ../build/jetracer_run/jetracer_run.egg-info
+[1.338s] writing ../build/jetracer_run/jetracer_run.egg-info/PKG-INFO
+[1.338s] writing dependency_links to ../build/jetracer_run/jetracer_run.egg-info/dependency_links.txt
+[1.338s] writing entry points to ../build/jetracer_run/jetracer_run.egg-info/entry_points.txt
+[1.339s] writing requirements to ../build/jetracer_run/jetracer_run.egg-info/requires.txt
+[1.339s] writing top-level names to ../build/jetracer_run/jetracer_run.egg-info/top_level.txt
+[1.339s] writing manifest file '../build/jetracer_run/jetracer_run.egg-info/SOURCES.txt'
+[1.339s] reading manifest file '../build/jetracer_run/jetracer_run.egg-info/SOURCES.txt'
+[1.340s] writing manifest file '../build/jetracer_run/jetracer_run.egg-info/SOURCES.txt'
+[1.340s] running build
+[1.340s] running build_py
+[1.340s] creating /home/ryosuke/ros2_ws/src/build/jetracer_run/build
+[1.340s] creating /home/ryosuke/ros2_ws/src/build/jetracer_run/build/lib
+[1.340s] creating /home/ryosuke/ros2_ws/src/build/jetracer_run/build/lib/jetracer_run
+[1.340s] copying jetracer_run/run.py -> /home/ryosuke/ros2_ws/src/build/jetracer_run/build/lib/jetracer_run
+[1.340s] copying jetracer_run/__init__.py -> /home/ryosuke/ros2_ws/src/build/jetracer_run/build/lib/jetracer_run
+[1.340s] running install
+[1.341s] running install_lib
+[1.341s] creating /home/ryosuke/ros2_ws/src/install/jetracer_run/lib/python3.10/site-packages/jetracer_run
+[1.341s] copying /home/ryosuke/ros2_ws/src/build/jetracer_run/build/lib/jetracer_run/run.py -> /home/ryosuke/ros2_ws/src/install/jetracer_run/lib/python3.10/site-packages/jetracer_run
+[1.341s] copying /home/ryosuke/ros2_ws/src/build/jetracer_run/build/lib/jetracer_run/__init__.py -> /home/ryosuke/ros2_ws/src/install/jetracer_run/lib/python3.10/site-packages/jetracer_run
+[1.342s] byte-compiling /home/ryosuke/ros2_ws/src/install/jetracer_run/lib/python3.10/site-packages/jetracer_run/run.py to run.cpython-310.pyc
+[1.342s] byte-compiling /home/ryosuke/ros2_ws/src/install/jetracer_run/lib/python3.10/site-packages/jetracer_run/__init__.py to __init__.cpython-310.pyc
+[1.342s] running install_data
+[1.342s] creating /home/ryosuke/ros2_ws/src/install/jetracer_run/share/ament_index
+[1.342s] creating /home/ryosuke/ros2_ws/src/install/jetracer_run/share/ament_index/resource_index
+[1.343s] creating /home/ryosuke/ros2_ws/src/install/jetracer_run/share/ament_index/resource_index/packages
+[1.343s] copying resource/jetracer_run -> /home/ryosuke/ros2_ws/src/install/jetracer_run/share/ament_index/resource_index/packages
+[1.343s] copying package.xml -> /home/ryosuke/ros2_ws/src/install/jetracer_run/share/jetracer_run
+[1.343s] running install_egg_info
+[1.344s] Copying ../build/jetracer_run/jetracer_run.egg-info to /home/ryosuke/ros2_ws/src/install/jetracer_run/lib/python3.10/site-packages/jetracer_run-0.0.0-py3.10.egg-info
+[1.345s] running install_scripts
+[1.362s] Installing jetracer_run script to /home/ryosuke/ros2_ws/src/install/jetracer_run/lib/jetracer_run
+[1.362s] writing list of installed files to '/home/ryosuke/ros2_ws/src/build/jetracer_run/install.log'

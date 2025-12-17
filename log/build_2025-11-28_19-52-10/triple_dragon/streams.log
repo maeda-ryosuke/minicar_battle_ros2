@@ -1,0 +1,22 @@
+[1.507s] Invoking command in '/home/ryosuke/ros2_ws/src/triple_dragon': PYTHONPATH=/home/ryosuke/ros2_ws/src/build/triple_dragon/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryosuke/ros2_ws/src/install/triple_dragon/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/triple_dragon build --build-base /home/ryosuke/ros2_ws/src/build/triple_dragon/build install --record /home/ryosuke/ros2_ws/src/build/triple_dragon/install.log --single-version-externally-managed install_data
+[1.678s] running egg_info
+[1.678s] writing ../build/triple_dragon/triple_dragon.egg-info/PKG-INFO
+[1.678s] writing dependency_links to ../build/triple_dragon/triple_dragon.egg-info/dependency_links.txt
+[1.679s] writing entry points to ../build/triple_dragon/triple_dragon.egg-info/entry_points.txt
+[1.679s] writing requirements to ../build/triple_dragon/triple_dragon.egg-info/requires.txt
+[1.679s] writing top-level names to ../build/triple_dragon/triple_dragon.egg-info/top_level.txt
+[1.680s] reading manifest file '../build/triple_dragon/triple_dragon.egg-info/SOURCES.txt'
+[1.680s] writing manifest file '../build/triple_dragon/triple_dragon.egg-info/SOURCES.txt'
+[1.680s] running build
+[1.681s] running build_py
+[1.681s] running install
+[1.681s] running install_lib
+[1.682s] running install_data
+[1.682s] copying resource/triple_dragon -> /home/ryosuke/ros2_ws/src/install/triple_dragon/share/ament_index/resource_index/packages
+[1.682s] copying package.xml -> /home/ryosuke/ros2_ws/src/install/triple_dragon/share/triple_dragon
+[1.682s] running install_egg_info
+[1.684s] Copying ../build/triple_dragon/triple_dragon.egg-info to /home/ryosuke/ros2_ws/src/install/triple_dragon/lib/python3.10/site-packages/triple_dragon-0.0.0-py3.10.egg-info
+[1.684s] running install_scripts
+[1.703s] Installing triple_dragon script to /home/ryosuke/ros2_ws/src/install/triple_dragon/lib/triple_dragon
+[1.704s] writing list of installed files to '/home/ryosuke/ros2_ws/src/build/triple_dragon/install.log'
+[1.766s] Invoked command in '/home/ryosuke/ros2_ws/src/triple_dragon' returned '0': PYTHONPATH=/home/ryosuke/ros2_ws/src/build/triple_dragon/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryosuke/ros2_ws/src/install/triple_dragon/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/triple_dragon build --build-base /home/ryosuke/ros2_ws/src/build/triple_dragon/build install --record /home/ryosuke/ros2_ws/src/build/triple_dragon/install.log --single-version-externally-managed install_data

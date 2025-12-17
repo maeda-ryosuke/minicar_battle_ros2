@@ -1,0 +1,21 @@
+[1.492s] Invoking command in '/home/ryosuke/ros2_ws/src/jetracer_run': PYTHONPATH=/home/ryosuke/ros2_ws/src/build/jetracer_run/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryosuke/ros2_ws/src/install/jetracer_run/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/jetracer_run build --build-base /home/ryosuke/ros2_ws/src/build/jetracer_run/build install --record /home/ryosuke/ros2_ws/src/build/jetracer_run/install.log --single-version-externally-managed install_data
+[1.655s] running egg_info
+[1.655s] writing ../build/jetracer_run/jetracer_run.egg-info/PKG-INFO
+[1.655s] writing dependency_links to ../build/jetracer_run/jetracer_run.egg-info/dependency_links.txt
+[1.655s] writing entry points to ../build/jetracer_run/jetracer_run.egg-info/entry_points.txt
+[1.655s] writing requirements to ../build/jetracer_run/jetracer_run.egg-info/requires.txt
+[1.656s] writing top-level names to ../build/jetracer_run/jetracer_run.egg-info/top_level.txt
+[1.657s] reading manifest file '../build/jetracer_run/jetracer_run.egg-info/SOURCES.txt'
+[1.657s] writing manifest file '../build/jetracer_run/jetracer_run.egg-info/SOURCES.txt'
+[1.657s] running build
+[1.657s] running build_py
+[1.657s] running install
+[1.658s] running install_lib
+[1.658s] running install_data
+[1.659s] running install_egg_info
+[1.660s] removing '/home/ryosuke/ros2_ws/src/install/jetracer_run/lib/python3.10/site-packages/jetracer_run-0.0.0-py3.10.egg-info' (and everything under it)
+[1.660s] Copying ../build/jetracer_run/jetracer_run.egg-info to /home/ryosuke/ros2_ws/src/install/jetracer_run/lib/python3.10/site-packages/jetracer_run-0.0.0-py3.10.egg-info
+[1.661s] running install_scripts
+[1.678s] Installing jetracer_run script to /home/ryosuke/ros2_ws/src/install/jetracer_run/lib/jetracer_run
+[1.678s] writing list of installed files to '/home/ryosuke/ros2_ws/src/build/jetracer_run/install.log'
+[1.753s] Invoked command in '/home/ryosuke/ros2_ws/src/jetracer_run' returned '0': PYTHONPATH=/home/ryosuke/ros2_ws/src/build/jetracer_run/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ryosuke/ros2_ws/src/install/jetracer_run/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/jetracer_run build --build-base /home/ryosuke/ros2_ws/src/build/jetracer_run/build install --record /home/ryosuke/ros2_ws/src/build/jetracer_run/install.log --single-version-externally-managed install_data

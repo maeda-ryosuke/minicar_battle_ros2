@@ -1,0 +1,3 @@
+[console_scripts]
+self_area_pub = self_area_publish.run:main
+
